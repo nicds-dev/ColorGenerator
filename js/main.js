@@ -12,8 +12,9 @@ const genRandomColor = () => {
     return newColor;
 }
 const changeNewColor = () => {
-    colorBody.style.backgroundColor = genRandomColor();
-    textColorP.innerHTML = genRandomColor();
+    const randomColor =  genRandomColor();
+    colorBody.style.backgroundColor = randomColor;
+    textColorP.innerHTML = randomColor;
 }
 
 changeColor.addEventListener("click", changeNewColor);
